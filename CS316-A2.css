@@ -1,0 +1,163 @@
+.header {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  font-size: 24px;
+  height: 50px;
+  color: beige;
+  background-color: rgb(212, 137, 55);
+
+}
+
+.full_ui {
+  background-color: rgb(159, 127, 78);
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  /* Two columns of equal width */
+  grid-gap: 20px;
+  /* Gap between grid items */
+  margin: 0 auto;
+  /* Space around the container */
+}
+
+.buttons_ui {
+  margin: 10px auto;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: rgb(35, 150, 238);
+  color: brown;
+}
+
+.button_header {
+  border: 4px black;
+  margin: 0 auto;
+  text-align: center;
+  color:rgb(28, 17, 2);
+}
+
+button {
+  float: middle;
+  padding: 5px;
+  margin: 5px;
+  background-color: rgb(230, 228, 70);
+  color: rgb(24, 107, 180);
+}
+
+
+.num_list_ui {
+  margin: 10px auto;
+  padding: 10px;
+  background-color: rgb(228, 68, 65);
+  color:azure;
+  border: 1px solid black;
+  /* Border around the box */
+  /* width: 100px; Width of the box */
+  height: 300px;
+  /* Height of the box */
+  overflow: auto;
+}
+
+
+
+.called_nums_table {
+  border: 1px solid black;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: center;
+  height: 12px;
+}
+
+.called_num_block_odd {
+  width: 50px;
+  height: 12px;
+  font-size: 12px;
+  background-color: rgb(124, 128, 9);
+  border: 1px solid black;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.called_num_block_even {
+  width: 50px;
+  height: 12px;
+  font-size: 12px;
+  background-color: brown;
+  border: 1px solid black;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.board_ui {
+  background-color: rgb(228, 153, 245);
+  margin: 10px auto;
+  padding: 20px;
+  /* Padding inside the box */
+  border: 1px solid black;
+  /* Border around the box */
+  padding: 20px;
+  /* Padding inside the box */
+  margin-bottom: 10px;
+  /*  width: 350px; Width of the box */
+  height: 300px;
+}
+
+.board_table {
+  margin: 0 auto;
+  /* This centers the table horizontally */
+}
+
+.board_element {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  border: 1px solid black;
+  background-color: rgb(157, 87, 2);
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+.circle_num {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35px;
+  height: 35px;
+  border: 2px solid red;
+  /* Red border */
+  border-radius: 50%;
+  /* Makes it a circle */
+  box-sizing: border-box;
+  /* Include border in the width and height */
+}
+
+.circle_bingo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35px;
+  height: 35px;
+  border: 2px solid red;
+  /* Red border */
+  border-radius: 50%;
+  /* Makes it a circle */
+  box-sizing: border-box;
+  /* Include border in the width and height */
+  animation: flash 1s infinite alternate;
+}
+
+@keyframes flash {
+  0% {
+    background-color: rgba(255, 255, 255, 0.133);
+  }
+
+  /* End state */
+  100% {
+    background-color: rgba(255, 0, 0, 0.477);
+  }
+
+  /* Start state again */
+}
